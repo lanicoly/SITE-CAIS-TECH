@@ -693,6 +693,223 @@ html {
   border-radius: 12px;
 
 }
+
+/* ÁREA DE COMPETIÇÕES */
+
+.competicoes{
+  padding: 24px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.competicoes h1 {
+  color: #ffffff;
+}
+
+.titulo-competicao {
+  text-align: center;
+}
+
+.competicoes > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-competicoes-right{
+  display: flex;
+  flex-direction: row;
+  border: #EFF4F7 1px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 50px;
+
+}
+
+.infos-competicao{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+  padding: 4px 8px 8px 16px;
+  width: 100%;
+}
+
+.cards-competicoes-left{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: #EFF4F7 1px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: auto;
+  background-color: #fff;
+  margin-bottom: 30px;
+  /* flex-wrap: wrap-reverse; */
+
+}
+
+.cards-competicoes-left .conteudo {
+  display: flex;
+  flex: 1;
+  
+}
+
+.img-card-competicao-left{
+  height: auto;
+  width: auto;
+  min-width: 450px;
+  max-height: 300px;
+  padding-left: 0px;
+  padding-right: 0%;
+
+}
+
+.img-card-competicao-left img{
+  height: 300px;
+  width: auto;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img-card-competicao-right{
+  height: auto;
+  width: auto;
+  max-width: 250px;
+}
+
+.img-card-competicao-right img{
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+.txt-competicao h1{
+  color: #1431BC;
+  font-size: 1.75rem;
+  margin: 8px 0px;
+  flex-wrap:wrap;
+}
+
+.txt-competicao h2{
+  color: #F21D3C;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.txt-competicao-left h1{
+  color: #1431BC;
+  font-size: 1.75rem;
+  margin: 8px 0px;
+  grid-area: texto;
+}
+
+.txt-competicao-left h2{
+  color: #F21D3C;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.txt-competicao-left{
+  margin-left: 16px;
+  flex:1
+}
+
+.area-tematica{
+  display: flex;
+  margin-top: 2px;
+}
+
+.area-tematica span{
+  background-color:rgb(0, 191, 225);
+  border-radius: 10px;
+  padding: 5px 12px;
+  font-size: 16px;
+  color: #EFF4F7;
+  margin-right: 10px;
+}
+
+.desc-competicao{
+  color: #3249B9;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.desc-competicao p {
+  margin: 10px;
+}
+
+.links-competicao a{
+  background-color: #F21D3C;
+  color: #EFF4F7;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 3px 0px 3px 7px;
+}
+
+.links-competicao{
+  width: auto;
+  /* margin-top: 49px; */
+  padding: 16px;
+}
+
+.links-competicao-left{
+  grid-area: links;
+  width: auto;
+  /* margin-left: auto; */
+  padding: 16px;
+  /* margin-top: 49px;
+  margin-left: 140px;
+  margin-right: 8px; */
+}
+
+.links-competicao-left a{
+  background-color: #F21D3C;
+  color: #EFF4F7;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 3px 0px 3px 7px;
+}
+
+.fa-linkedin{
+  padding-right: 7px;
+}
+
+.titulo-competicao{
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.botao-inscricao{
+  border: none;
+  font-family: "Roboto";
+  background-color: #F21D3C;
+  color: #EFF4F7;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 12px 14px 12px 23px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 8px;
+
+}
+
+.botao-inscricao:hover {
+  transform: scale(1.06);
+  transition: all .2s ease-in-out;
+}
+
+
 /* ÁREA DE PATROCÍNIO*/
 
 .parcerias{
