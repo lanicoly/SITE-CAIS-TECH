@@ -102,3 +102,9 @@ function menuHamburguer(){
     document.getElementById("menu-itens").style.display = "none"
   }
 }
+
+function scrollCarousel(direction){
+      const carousel = document.getElementById("carousel");
+      const cardWidth = 520; 
+      carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+}
