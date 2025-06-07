@@ -386,7 +386,7 @@ html {
   border: none;
   width: 100%;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -412,6 +412,7 @@ html {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  cursor: auto;
 }
 
 .txt-card h2{
@@ -1245,13 +1246,6 @@ section.carrosel {
   margin-bottom: 10px;
 }
 
-.modal{
-  width: 100%;
-  display: none;
-  grid-template-columns: 30% 70%;
-  position: absolute;
-  margin-top: 40vh;
-}
 
 .linha{
   display: flex;
@@ -1265,34 +1259,10 @@ section.carrosel {
   
 }
 
-.modal img{
-  grid-row: 1 / span 6;
-  width: auto;
-  height: auto;
-}
 
-.modal h2{
-  color: #1431BC;
-}
-.modal h4{
-  color: #01C0A1;
-}
-
-.modal-descricao{
-  color: #1431BC;
-}
-
-.modal-responsavel{
-  display: inline-block;
-  width: fit-content;
-  background-color: #01C0A1;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 8px;
-}
 /*CSS DO POP-UP DO CARD DA PROGRAMAÇÃO*/
 
-.close {
+/* .close {
   color: #aaaaaa;
   float: right;
   font-size: 36px;
@@ -1322,7 +1292,7 @@ section.carrosel {
   border-radius: 8px;
   width: auto;
   text-align: center;
-}
+} */
 
 
 .cards-prog{
@@ -1441,51 +1411,50 @@ section.carrosel {
 
 
 @media (max-width: 768px) { 
-  #card-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    visibility: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .card-popup {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: auto;
-    text-align: center;
-  }
-  
-  
-  .cards-prog{
-    display: flex;
-    flex-direction: column;
-    border: #EFF4F7 1px solid;
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 70%;
-    background-color: #EFF4F7;
-    align-items: center;
-    justify-content: center;
+    #card-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: hidden; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
     
-  }
-  
-  .img-card-prog{
-    height: auto;
-    width: auto;
-    justify-content: center;
-    padding-right: 0;
+    .card-popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: auto;
+      text-align: center;
+    }
     
-  }
-  
-  @media (max-width: 768px) { 
+    
+    .cards-prog{
+      display: flex;
+      flex-direction: column;
+      border: #EFF4F7 1px solid;
+      border-radius: 10px;
+      margin-top: 20px;
+      width: 70%;
+      background-color: #EFF4F7;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    
+    .img-card-prog{
+      height: auto;
+      width: auto;
+      justify-content: center;
+      padding-right: 0;
+      
+    }
+    
   #card-overlay {
     position: fixed;
     top: 0;
@@ -1603,7 +1572,7 @@ section.carrosel {
     letter-spacing: -1px;
     margin-right: 0px;
   }
-}
+
 
 
   .img-card-prog img{
@@ -1900,9 +1869,14 @@ footer{
     display: flex;
     flex-direction: column;
   }
+}
 
 
 @media screen  and (max-width: 949px){
+
+  .corpo-pagina {
+    top: 62px;
+  }
 
   .add-patro{
     gap: 12px;
@@ -1935,6 +1909,31 @@ footer{
   .launch-time{
     height: auto;
   }
+
+      
+
+  .carrosel .card-car {
+    width: max-content;
+    height: auto;
+  }
+  .carrosel .card-body img{
+    max-width: 450px;
+    height: auto;
+
+  }
+
+  .carrosel .card-body {
+    width: max-content;
+    max-width: none;
+    height: auto;
+  }
+
+  .carrosel .carousel {
+  max-width: 450px;
+}
+
+
+}
 
 @media screen and (max-width: 770px) {
 
@@ -1997,24 +1996,25 @@ footer{
     background-size: contain;
     background-position: center; 
   }
-}
-
-
+  
+  
   .folder a{
     margin-bottom: -33vw;
     margin-right: 20px;
     align-self: center;
   }
-
+  
   
   .menu-hamburguer{
     display: flex;
     align-items: center;
     justify-self: center;
     font-size: 1.5rem;
-    color: #01C0A1;
+    color: #fff;
     cursor: pointer;
   }
+  
+  
   .navbar{
     padding:10px 0px;
     display: grid;
@@ -2036,7 +2036,35 @@ footer{
   #linha2{
     margin-top: 0;
   }
+
+  #arrow-car .arrow{
+    display: none;
+  }
+
+    .carrosel .carousel {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0 5px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carrosel .card-car {
+    width: 85vw;
+    margin: 0 5px;
+  }
+
+  .carrosel .arrow {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .carrosel .card-body img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 }
+
 
 @media screen and (max-width: 500px) {
   
@@ -2072,34 +2100,34 @@ footer{
     color: red
   }
   
-  /* .img-card-palestrante-right img{
-    height: auto;
-    width: 100%;
-
+  .img-card-competicao-left, .img-card-competicao-right {
+    max-width: none;
+    width: max-content;
   }
-  .img-card-palestrante-left img{
-    height: auto;
-    width: 100%;
-
+  .img-card-competicao-left img, .img-card-competicao-right img{
+    max-width: none;
+    width: 90%;
   }
-  .cards-palestrantes-right{
-    width: 100%
-  }
-  .cards-palestrantes-left{
-    width: 100%
-  }
-
-  .links-palestrante-left{
-    margin-left: 0;
-  }
-  .txt-palestrante-left{
-    margin-left: 0;
-  } */
 
   .minicursos-row{
     justify-content: center;
   }
+
+  .artigo{
+    max-width: 400px;
+    width: max-content;
+    height: auto;
 }
+  .artigo img{
+    max-width: 360px;
+    width: 90%;
+    height: auto;
+}
+
+
+}
+
+
 
 @media screen and (max-width: 1222px) {
   .folder a{
@@ -2171,18 +2199,23 @@ footer{
   
     }
 
-.carrosel .carousel {
-  max-width: 510px;
-}
-}
 }
 
-@media screen and (max-width: 1074px) {
+
+@media screen and (max-width: 1120px) {
   .folder a{
     margin-top: 14vw;
     margin-right: 20px;
     align-self: center;
   }
+
+.corpo-pagina {
+  top: 125px;
+}
+
+.carrosel .carousel {
+  max-width: 510px;
+}
 }
 
 @media screen and (max-width: 950px) {

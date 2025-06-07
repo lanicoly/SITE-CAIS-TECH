@@ -87,17 +87,17 @@ function passar_dia(x) {
   } 
 }
 
-function exibir_modal(modal){
-  document.getElementById(modal).style.visibility = 'visible';
-}
-function fechar_modal(modal){
-  document.getElementById(modal).style.visibility = 'hidden';
-}
+// function exibir_modal(modal){
+//   document.getElementById(modal).style.visibility = 'visible';
+// }
+// function fechar_modal(modal){
+//   document.getElementById(modal).style.visibility = 'hidden';
+// }
 
 function menuHamburguer(){
   if(document.getElementById("menu-itens").style.display == "none"){
     document.getElementById("menu-itens").style.display = "block"
-    console.log('ola')
+    // console.log('ola')
   }else{
     document.getElementById("menu-itens").style.display = "none"
   }
