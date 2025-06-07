@@ -543,6 +543,9 @@ html {
   border-bottom-left-radius: 10px;
 }
 
+.txt-palestrante, .txt-palestrante-left {
+  max-width: 95%;
+}
 
 .txt-palestrante h1{
   color: #1431BC;
@@ -763,6 +766,8 @@ html {
 .cards-competicoes-left .conteudo {
   display: flex;
   flex: 1;
+  grid-area: conteudo-competicao;
+
   
 }
 
@@ -773,6 +778,7 @@ html {
   max-height: 300px;
   padding-left: 0px;
   padding-right: 0%;
+  grid-area: foto-competicao;
 
 }
 
@@ -786,7 +792,6 @@ html {
 .img-card-competicao-right{
   height: auto;
   width: auto;
-  min-width: 550px;
   max-height: 300px;
 
 }
@@ -1930,49 +1935,8 @@ footer{
   .launch-time{
     height: auto;
   }
-  .time-button{
-    border: none;
-    font-family: "Roboto";
-    background-color: #3249B9;
-    color: #EFF4F7;
-    border-radius: 10px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    padding: 12px 14px 12px 23px;
-    cursor: pointer;
-    letter-spacing: -1px;
-    width: 255px;
-    height: 50px;
-    margin-top: 12px;
-    margin-bottom: 8px;
-  
-  }
-}
 
-  .folder button{
-    padding: 0.5rem 0.5rem;
-    font-size: 0.75rem;
-
-  }
-  .data-button{
-    flex-direction: column;
-    justify-content: left;
-    margin: 0px 0px 36px 0px;
-  }
-  
-
-  .card{
-    background-color: #EFF4F7;
-    border: none;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
 
   .area-tematica{
     max-width: 80%;
@@ -2143,6 +2107,74 @@ footer{
     margin-right: 20px;
     align-self: center;
   }
+
+  
+  
+  
+    .folder button{
+      padding: 0.5rem 0.5rem;
+      font-size: 0.75rem;
+  
+    }
+    .data-button{
+      flex-direction: column;
+      justify-content: left;
+      margin: 0px 0px 36px 0px;
+    }
+    
+  
+    .card{
+      background-color: #EFF4F7;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .cards-infos-artigos {
+    flex-direction: column;
+  
+  }
+  
+    
+    .img-card-competicao-right img, .img-card-competicao-left img{
+      height: auto;
+      width: 100%;
+      max-width: 500px;
+  
+    }
+    .img-card-competicao-right, .img-card-competicao-left,{
+      height: auto;
+      width: 100%;
+      max-width: 500px;
+  
+    }
+      
+  
+  
+    .cards-competicoes-right{
+      flex-direction: column;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .cards-competicoes-left{
+      width: max-content;
+      display: grid;
+      grid-template-areas: 'foto-competicao'
+                           'conteudo-competicao';
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+
+.carrosel .carousel {
+  max-width: 510px;
+}
+}
 }
 
 @media screen and (max-width: 1074px) {
