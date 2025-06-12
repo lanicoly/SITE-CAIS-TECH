@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" tyoe="imagex/svg" href="IMAGENS/Logos CAIS TECH/LOGO CAIS TECH.svg">
+
+
+    <script src="JS/script.js"></script>
+    <script src="JS/script2.js"></script>
+    <title>Cais Tech 2025</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <span class="menu-hamburguer"><i class="fa-solid fa-bars" onclick="menuHamburguer()"></i></span>
+        <a href="#inicio">
+            <img src="IMAGENS/Logos CAIS TECH/LOGO CAIS TECH.svg" alt="">
+        </a>
+        <ul id="menu-itens">
+            <li><a href="#programacao">PROGRAMAÇÃO</a></li>
+            <li><a href="#palestras">PALESTRAS</a></li>
+            <li><a href="#minicursos">MINICURSOS</a></li>
+            <li><a href="#competicoes">COMPETIÇÕES</a></li>
+            <li><a href="#artigos">ARTIGOS</a></li>
+            <li><a href="#carrosel">HISTÓRIA</a></li>
+            <li><a href="#duvidas">DÚVIDAS</a></li>
+        </ul>
+    </nav>
+
+    <div class="corpo-pagina">
+
+        <div class="container">
+            <a href="https://suap.ifpi.edu.br/eventos/inscricao/1480/">
+                <section class="folder"></section>
+            </a>
+            <section id="inicio" class="card-sbr-nos">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zjli1rS5jYo?si=2CjrM0jvquBB6npK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="texto-container">
+                    <h2>SOBRE NÓS</h2>
+                    <h1>CONHEÇA O EVENTO</h1>
+                    <p id="linha">__________</p>
+                    <p>
+                        Descrição.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="timer">
+            <div class="desc-time">
+                <p>O EVENTO COMEÇA EM:</p>
+            </div>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Dias</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Horas</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutos</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Segundos</span>
+                </div>
+            </div>
+            <div class="time-button-container">
+                <a href=""><button class="time-button">QUERO ME INSCREVER!</button></a>
+            </div>
+        </div>
+        <div class="container">
+            <section class="programacao">
+                <h1 id="titulo-prog">PROGRAMAÇÃO</h1>
+                <div class="span-linha"><span id="dia_23"></span><span id="dia_24"></span><span id="dia_25"></span>
+                </div>
+                <h2 id="dia_evento_semana">SEGUNDA-FEIRA</h2>
+                <div class="data-button">
+                    <div id="dia_programacao">
+                        <h1 id="dia_event">23 DE JUNHO</h1>
+                        <p id="linha2">__________</p>
+                    </div>
+                    <div>
+                        <button class="btn-prx" id="btn-ant" onclick="passar_dia(-1)"><i class="fas fa-arrow-left"></i>
+                            Dia anterior
+                        </button>
+                        <button class="btn-prx" id="btn-prx" onclick="passar_dia(1)">Próximo dia <i
+                                class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="event-card dia_23">
+                    <div class="card card1" id="atividade01">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:00</strong> - Credenciamento</h2><span>detalhamento em breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card2" id="atividade02">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:30</strong> - Palestra</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card3" id="atividade03">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:00</strong> - Credenciamento </h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card4" id="atividade04">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:15</strong> - Apresentação Cultural por Deborah Thielly</h2>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card5" id="atividade05">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:45</strong> - Abertura oficial</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card6" id="atividade06">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>19:00</strong>- Palestra</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="event-card dia_24 hidden">
+                    
+                    
+
+                    <div class="card card7" id="atividade07">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:00</strong> - Minicurso - Git e Github para Mercado de Trabalho</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card8">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:00</strong> - Oficina - Comunicação e Marketing</h2><span>abra
+                                    para mais detalhes</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card9">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Minicurso - Introdução à Análise Inferencial com o R Studio</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card10">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Oficina - Venda  seu peixe</h2><span>abra
+                                    para mais detalhes</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card11">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Competição - Campeonato de CS:GO</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card12">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:00</strong> - Credenciamento</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card13" >
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:00</strong> - Apresentação Cultural</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card13" >
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>19:00</strong> - Mesa Redonda</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="event-card dia_25 hidden">
+                    
+                    
+
+                    
+
+                    <div class="card card14" >
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:00</strong> - Minicurso - Ferramentas de Inteligência Artificial no Dia a Dia: produtividade, criatividade e tomada de decisão</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card15" >
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>08:00</strong> - Minicurso - Desenvolvendo um Assistente de IA para o WhatsApp</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card16" >
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>09:00</strong> - Apresentação de Banners - Projetos de Alunos do Ensino Médio</h2><span>detalhamento breve</span></div>
+                        </div>
+                    </div>
+
+                    <div class="card card17">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Competição - Maratona de Programação</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card18">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Apresentação de Banners - Artigos Científicos</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="card card19">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>14:00</strong> - Apresentação Oral - Projetos de Pesquisas</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card20">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>16:00</strong> - Apresentação de Banners - Artigos Científicos</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card21">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:00</strong> - Credenciamento</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card22">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>18:30</strong> - Apresentação Cultural</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card22">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>19:00</strong> - Palestra - Diagnóstico, sentença ou rota: quem decidiu — você ou a IA?</h2><span>detalhamento breve</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card22">
+                        <div class="flex-row">
+                            <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                            <div class="txt-card">
+                                <h2 class="desc-horario"><strong>21:00</strong> - Premiações</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+           <section id="palestras" class="palestrantes">
+                <h1 class="titulo-palestrante">PALESTRAS</h1>
+                <div>
+
+                    <div class="cards-palestrantes-left">
+                        <div class="conteudo">
+                            <div class="txt-palestrante-left">
+                                <h2>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h2>
+                                <h1>Maria Rebello</h1>
+                                <div class="area-tematica">
+                                    <span>Inovação</span>
+                                    <span>Propriedade Intelectual</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Contadora, Especialista em gestão empresarial, Mestre em Propriedade Intelectual
+                                        e TT para Inovação. Empresária há mais de 10 anos nas áreas de propriedade
+                                        intelectual e gestão da inovação, Consultora e Instrutora, Gerente de Inovação
+                                        da Investe Piauí e supervisora do programa Sebrae na sua empresa.</p>
+                                </div>
+                            </div>
+                            <div class="links-palestrante-left">
+                                <a href="https://www.instagram.com/mariarebello?igsh=ZnpkZW9uNTIyZHl5"
+                                    style="padding-right: 8px;" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/maria rebello.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-right">
+                        <div class="img-card-palestrante-right">
+                            <img src="IMAGENS/Coutinho.jpeg" alt="">
+                        </div>
+                        <div class="infos-palestrante">
+
+                            <div class="txt-palestrante">
+                                <h2>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h2>
+                                <h1>Paulo Coutinho</h1>
+                                <div class="area-tematica">
+                                    <span>Inovação</span>
+                                    <span>Empreendedorismo</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Empresário viciado em inovação e criatividade. Consultor especialista em Tração,
+                                        Transformação Digital e Inovação. Possui experiência nas áreas de Inovação,
+                                        empreendedorismo, planejamento empresarial, fomento e acesso a mercado. Na linha
+                                        de apoio, incentivo e desenvolvimento de startups, atua como consultor para pré,
+                                        aceleração e mkt & vendas focado em tração e acesso a novos mercados e
+                                        integração FIGITAL levando negócios do modelo físico para o digital.</p>
+                                </div>
+                            </div>
+
+                            <div class="links-palestrante">
+                                <a href="https://www.instagram.com/paulocoutinho.br?igsh=MWNueWpiNXV0ZjZrdw=="
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/pccoutinhobr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-left">
+                        <div class="conteudo">
+                            <div class="txt-palestrante-left">
+                                <h2> PALESTRA - CYBEREDUC: CIBERSEGURANÇA NA EDUCAÇÃO PÚBLICA
+                                </h2>
+                                <h1>Prof. Keoma de Sousa Coelho</h1>
+                                <div class="area-tematica">
+                                    <span>Cyber Segurança</span>
+                                    <span>Análise de Dados</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Tecnólogo em Processamento de Dados pela AESPI, pós-graduado em redes de
+                                        computadores com ênfase em certificação Linux LPI e segurança corporativa
+                                        (Faculdade Santo Agostinho), especialização em banco de dados (Universidade São
+                                        Judas Tadeu), especialização em inteligência artificial na PUC Minas, Pós
+                                        graduação em análise de dado e MBA em Big Data e inteligência competitiva pelo
+                                        Descomplica.</p>
+                                </div>
+                            </div>
+                            <div class="links-palestrante-left">
+                                <a href="https://www.instagram.com/sousakeoma?igsh=MXYzM3NkaGQ4bWs1" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/keoma-sousa-55a21b47?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Keoma.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-right">
+                        <div class="img-card-palestrante-right">
+                            <img src="IMAGENS/Cristiano.jpeg" alt="">
+                        </div>
+                        <div class="infos-palestrante">
+
+                            <div class="txt-palestrante">
+                                <h2>PALESTRA - DevSecOps</h2>
+                                <h1>Cristiano Altino Cavalcante</h1>
+                                <div class="area-tematica">
+                                    <span>DevOps</span>
+                                    <span>Cyber Segurança</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Sou Administrador de Redes e de Sistemas desde 2009, Desenvolvedor Python desde
+                                        2014 com foco em infraestrutura voltados à Data Center e também sou
+                                        Administrador de Banco de Dados desde 2019.
+
+                                        Tenho formação em Defesa Cibernética pela Estácio e contribuo em projetos de
+                                        infraestrutura tanto em órgão público quanto em empresa privada focados em
+                                        automação, cibersegurança e escalabilidade.</p>
+                                </div>
+                            </div>
+
+                            <div class="links-palestrante">
+
+                                <a href="https://www.linkedin.com/in/844b5138?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-left">
+                        <div class="conteudo">
+                            <div class="txt-palestrante-left">
+                                <h2> PALESTRA - Integridade Acadêmica - Como evitar o plágio e garantir a originalidade
+                                    em projetos de Inovação tecnológica</h2>
+                                <h1>Dalson Carvalho</h1>
+                                <div class="area-tematica">
+                                    <span>Inteligência Artificial</span>
+                                    <span>Inovação</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Cineasta graduado pela Academia Internacional de Cinema (AIC) e especialista em
+                                        Edição de Vídeo pela New York Film Academy (NYFA) e consultor com pós-graduação
+                                        em Inteligência Artificial e Mestrado em Inovação e Empreendedorismo. Dalson
+                                        Carvalho é especialista em Realidade Virtual, Inteligência Artificial e
+                                        tecnologias emergentes. Com uma trajetória marcada pela inovação, é referência
+                                        no mercado audiovisual e na aplicação de soluções tecnológicas em diversas
+                                        áreas, incluindo empreendedorismo e educação. Ministra palestras e cursos pelo
+                                        SEBRAE-PI, com foco em como Inteligência Artificial e Realidade Virtual podem
+                                        transformar a comunicação e os negócios. Atualmente está cursando Jogos Digitais
+                                        e Neurociência do Comportamento.</p>
+                                </div>
+                            </div>
+                            <div class="links-palestrante-left">
+                                <a href="https://www.instagram.com/dalsoncarvalho?igsh=djdyN3ZvZXZjMTFt"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dalson-carvalho?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Dalson.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-right">
+                        <div class="img-card-palestrante-right">
+                            <img src="IMAGENS/Raimundo.jfif" alt="">
+                        </div>
+                        <div class="infos-palestrante">
+
+                            <div class="txt-palestrante">
+                                <h2>PALESTRA - Investigação Cibernética em Fontes Abertas</h2>
+                                <h1>Raimundo Neto</h1>
+                                <div class="area-tematica">
+                                    <span>Cyber Segurança</span>
+                                    <span>Redes</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Perito AdHoc Computacional Forense. Mestre em Segurança de Redes de Computadores.
+                                        Consultor em CyberSegurança, Lei Geral Proteção de Dados e Compliance Digital.
+                                        Professor de Graduação e Pós Graduação na área de Tecnologia da Informação. CEO
+                                        The Forense.</p>
+                                </div>
+                            </div>
+
+                            <div class="links-palestrante">
+                                <a href="https://www.linkedin.com/in/raimundo-neto-85a7462a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cards-palestrantes-left">
+                        <div class="conteudo">
+                            <div class="txt-palestrante-left">
+                                <h2> PALESTRA - Escolas Sustentáveis: Inovação e Tecnologias no Sul do Piauí</h2>
+                                <h1>Prof. Me. Israel Lobato Rocha</h1>
+                                <div class="area-tematica">
+                                    <span>Gestão Ambiental</span>
+                                    <span>Desenvolvimento Sustentável</span>
+                                </div>
+                                <div class="desc-palestrante">
+                                    <p>Graduado em Tecnologia em Gestão Ambiental pelo Instituto Federal de Educação,
+                                        Ciência e Tecnologia do Piauí (2014), especialista em Gestão e Educação
+                                        Ambiental pela Universidade Estadual do Piauí (2016) e mestre em Conservação de
+                                        Recursos Naturais do Cerrado pelo Instituto Federal Goiano (2019). Atualmente é
+                                        professor de Ensino Básico, Técnico e Tecnológico do Instituto Federal do Piauí
+                                        - Campus Corrente, Coordenador do Curso de Tecnologia em Gestão Ambiental e
+                                        líder do Núcleo de Estudos e Pesquisas em Conservação Ambiental do Cerrado
+                                        (NEP/CAC).</p>
+                                </div>
+                            </div>
+                            <div class="links-palestrante-left">
+                                <a href="https://www.instagram.com/israel.lobato_?igsh=MTU2OGVobWxlcjly"
+                                    target="_blank">
+                                    <i class="fab fa-instagram" style="padding-right: 8px;"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Israel.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="minicursos" class="minicursos">
+                <h1>MINICURSOS</h1>
+
+                <div class="minicursos-row">
+                    <div class="minicurso">
+                        <img src="IMAGENS/Ronaldo.jpeg" alt="">
+                        <div class="minicurso-body">
+                            <h4 class="minicurso-data">25/09/2024 - 08hrs às 12hrs</h4>
+                            <h2>INTRODUÇÃO AO MUNDO DA INTERNET DAS COISAS (IOT), COM ÊNFASE NO USO DE SOFTWARE LIVRE
+                            </h2>
+                            <h4 class="minicurso-palestrante">Ronaldo Pires Borges</h4>
+                            <p>Serão abordados os conceitos fundamentais de IoT, seguidos de uma parte prática que
+                                inclui a programação de dispositivos conectados. Os participantes aprenderão como
+                                configurar, programar e monitorar dispositivos IoT, além de explorar ferramentas de
+                                código aberto para o gerenciamento e visualização de dados em tempo real. O minicurso
+                                proporcionará uma compreensão básica de como funcionam os sistemas IoT.</p>
+                        </div>
+                    </div>
+
+                    <div class="minicurso">
+                        <img src="IMAGENS/Keoma.jpeg" alt="">
+                        <div class="minicurso-body">
+                            <h4 class="minicurso-data">25/09/2024 - 14hrs às 18hrs</h4>
+                            <h2>PENTEST</h2>
+                            <h4 class="minicurso-palestrante">Prof. Keoma de Sousa Coelho</h4>
+                            <p>Descubra como se proteger no ambiente digital e veja na prática como os hackers atuam!
+                                Participe do nosso evento exclusivo, e aprenda a identificar e mitigar riscos digitais,
+                                conheça as táticas utilizadas por hackers e explore o universo do pentest com
+                                demonstrações ao vivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="minicurso">
+                        <img src="IMAGENS/Andriella.jpeg" alt="">
+                        <div class="minicurso-body">
+                            <h4 class="minicurso-data">26/09/2024 - 08hrs às 12hrs</h4>
+                            <h2>Sustentabilidade: Inovação e tecnologias sociais em escolas do sul do Piauí
+                            </h2>
+                            <h4 class="minicurso-palestrante">Andriella Maciel da Cruz</h4>
+                            <p>Esta oficina visa proporcionar aos educadores da Rede Pública do Sul do Piauí e
+                                estudantes interessados pela temática, uma mentoria prática, apresentando ferramentas
+                                metodológicas e instrumentos que facilitam a implementação de atividades voltadas a
+                                sustentabilidade no ambiente escolar. Alinhada com os 17 Objetivos de Desenvolvimento
+                                Sustentável (ODS), a capacitação também foca na aplicação de tecnologias sociais
+                                adequadas às demandas específicas da região.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="minicurso">
+                        <img src="IMAGENS/CARLINHOS.jpeg" alt="">
+                        <div class="minicurso-body">
+                            <h4 class="minicurso-data">26/09/2024 - 08hrs às 12hrs & 14hrs às 18hrs</h4>
+                            <h2>Consumindo API com React e boas práticas no desenvolvimento frontend
+                            </h2>
+                            <h4 class="minicurso-palestrante">Carlos Augusto Brandão</h4>
+                            <p>O objetivo será apresentar o React de maneira simples e divertida através da
+                                implementação de um sistema web de consulta na base oficial da Marvel. Além dos
+                                conceitos primordiais do React, será ensinado sobre paginação, consumo de API com
+                                autenticação e boas práticas no desenvolvimento frontend. No contexto da Inovação, React
+                                é uma ferramenta oportuna pois rompe as barreiras dos navegadores servindo de ótima
+                                escolha para validar ideias e e em projetos de larga escala para além da web. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competicoes" class="competicoes">
+                <h1 class="titulo-competicao">COMPETIÇÕES</h1>
+                <div>
+
+                    <div class="cardl-competicao">
+                        <div class="text-card-l-competicao">
+                            <h2>25/06/2025</h2>
+                            <h1>MARATONA DE PROGRAMAÇÃO</h1>
+                            <div class="temas">
+                                <span>LÓGICA DE PROGRAMAÇÃO</span>
+                                <span>ALGORITMOS</span>
+                            </div>
+                            <div class="desc-comp">
+                                <p>Texto descritivo sobre a maratona.</p>
+                            </div>
+                            <a href=""><button class="botao-inscricao">INSCREVA-SE NA MARATONA</button></a>
+
+                        </div>
+                        <div class="image-card-l-competicao">
+                            <img src="IMAGENS/Maratona.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="cardr-competicao">
+                        <div class="image-card-r-competicao">
+                            <img src="IMAGENS/campeonato.png" alt="">
+                        </div>
+                        <div class="text-card-r-competicao">
+                            <h2>25/06/2025</h2>
+                            <h1>MARATONA DE PROGRAMAÇÃO</h1>
+                            <div class="temas">
+                                <span>LÓGICA DE PROGRAMAÇÃO</span>
+                                <span>ALGORITMOS</span>
+                            </div>
+                            <div class="desc-comp">
+                                <p>Texto descritivo sobre a maratona.</p>
+                            </div>
+                            <a href=""><button class="botao-inscricao">INSCREVA-SE NA MARATONA</button></a>
+
+                        </div>
+
+                    </div>
+                </div>
+                </section>
+
+              <section id="artigos" class="artigos">
+                    <h1>CHAMADA PARA ARTIGOS</h1>
+                    <div class="inscricao-artigos">
+                        <a href=""><button class="botao-inscricao">SUBMETA SEU ARTIGO</button></a>
+                    </div>
+
+                    <div class="cards-infos-artigos">
+
+                        <div class="card-artigo">
+                            <div class="temas">
+                                <span>APRESENTAÇÃO DE BANNER</span>
+                                <span>ARTIGO CIENTÍFICO</span>
+                            </div>
+                            <div class="image-card-artigo">
+                                <img src="IMAGENS/submissao.png" alt="">
+                            </div>
+                            <div class="text-card-artigo">
+                                <p>Apresentação oral de artigo no modelo da SBC (.DOC e LATEX) de até 6 páginas em formato de banner. </p>
+                                <div class="dupla-infos-text-card-artigo">
+                                    <div class="infos-text-card-artigo">
+                                        <h4>PERÍODO DE SUBMISSÃO:</h4>
+                                        <h2>28/05 à 06/06</h3>
+                                    </div>
+                                
+                                    <div class="infos-text-card-artigo">
+                                        <h4>RESULTADO DE ACEITE:</h4>
+                                        <h2>16/06</h3>
+                                    </div>
+                                
+                                </div>
+                                
+
+                                <div class="infos-text-card-artigo">
+                                    <h4>APRESENTAÇÃO DE BANNER:</h4>
+                                    <h2>25/06 das 16h às 18h</h3>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+            
+                        <div class="topicos-artigos">
+                            
+                            <div class="titulo-topicos-artigos">
+                                <h2>TÓPICOS DE INTERESSE</h2>
+                                <p>__________</p>
+                            </div>
+                            
+                            <ul>
+                                <li>BANCO DE DADOS</li>
+                                <li>CIÊNCIA DE DADOS</li>
+                                <li>COMPUTAÇÃO APLICADA À SAÚDE</li>
+                                <li>EDUCAÇÃO EM INFORMÁTICA</li>
+                                <li>EMPREENDEDORISMO E INOVAÇÃO</li>
+                                <li>INCLUSÃO DIGITAL</li>
+                                <li>INFORMÁTICA NA EDUCAÇÃO</li>
+                                <li>INFORMÁTICA PÚBLICA</li>
+                                <li>INFORMÁTICA INDUSTRIAL</li>
+                                <li>INTERAÇÃO HUMANO-COMPUTADOR</li>
+                                <li>INTERNET DAS COISAS (IoT)</li>
+                                <li>JOGOS E GAMIFICAÇÃO</li>
+                                <li>REDES DE COMPUTADORES</li>
+                                <li>ROBÓTICA</li>
+                                <li>SEGURANÇA DA INFORMAÇÃO</li>
+                                <li>SISTEMAS DE INFORMAÇÃO</li>
+                                <li>SISTEMAS DISTRIBUÍDOS</li>
+                                <li>COMPUTAÇÃO MÓVEL</li>
+                                <li>SISTEMAS HIPERMÍDIA, MULTIMÍDIA E WEB</li>
+                                <li>SISTEMAS OPERACIONAIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                       
+                <!--<section id="carrosel" class="carrosel">
+                    <div class="titulo-parcerias">
+                        <h2>HISTÓRIA</h2>
+                        <h1>ACOMPANHE AS EDIÇÕES PASSADAS DO CAIS TECH</h1>
+                        <p>__________</p>
+                    </div>
+                    <div id="arrow-car">
+                        <div class="arrow" onclick="scrollCarousel(-1)"><i class="fa-solid fa-chevron-left"></i>
+                        </div>
+
+                        <div class="carousel" id="carousel">
+                            <div class="card-car">
+                                <div class="card-header"><span>2021</span> 1ª EDIÇÃO</div>
+                                <div class="card-body">
+                                    <img src="./IMAGENS/500x300.png" alt="imagem de algo como 500x375" />
+                                </div>
+                                <div class="card-footer">Legenda da imagem</div>
+                            </div>
+                            <div class="card-car">
+                                <div class="card-header"><span>2022</span> 1ª EDIÇÃO</div>
+                                <div class="card-body">
+                                    <img src="./IMAGENS/500x300.png" alt="imagem de algo como 500x375" />
+                                </div>
+                                <div class="card-footer">Legenda da imagem</div>
+                            </div>
+                            <div class="card-car">
+                                <div class="card-header"><span>2023</span> 1ª EDIÇÃO</div>
+                                <div class="card-body">
+                                    <img src="./IMAGENS/500x300.png" alt="imagem de algo como 500x375" />
+                                </div>
+                                <div class="card-footer">Legenda da imagem</div>
+                            </div>
+                            <div class="card-car">
+                                <div class="card-header"><span>2024</span> 1ª EDIÇÃO</div>
+                                <div class="card-body">
+                                    <img src="./IMAGENS/500x300.png" alt="imagem de algo como 500x375   " />
+                                </div>
+                                <div class="card-footer">Legenda da imagem</div>
+                            </div>
+                            <div class="card-car">
+                                <div class="card-header"><span>2025</span> 1ª EDIÇÃO</div>
+                                <div class="card-body">
+                                    <img src="./IMAGENS/500x300.png" alt="Imagem" />
+                                </div>
+                                <div class="card-footer">Legenda da imagem</div>
+                            </div>
+                        </div>
+                        <div class="arrow" onclick="scrollCarousel(1)"><i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="parcerias" class="parcerias">
+                    <div class="titulo-parcerias">
+                        <h2>PARCERIAS</h2>
+                        <h1>CONHEÇA OS NOSSOS PATROCINADORES</h1>
+                        <p>__________</p>
+                    </div>
+                    <div class="add-patro">
+                        <h2>A SUA MARCA PODE ESTAR AQUI</h2>
+                        <a
+                            href="https://wa.me/558981104677/?text=Olá!%20Eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais"><button>QUERO
+                                PATROCINAR</button></a>
+                    </div>
+                    <div class="marcas-imgs">
+                        <img src="IMAGENS/Logos CAIS TECH//Creusa.png" alt="">
+                        <img src="IMAGENS/Logos CAIS TECH//virtex.png" alt="">
+                        <img src="IMAGENS/Logos CAIS TECH//Diva.png" alt="">
+                        <img src="IMAGENS/Logos CAIS TECH//logo_skyler (1)-1.png" alt="">
+                        <img src="IMAGENS/Logos CAIS TECH//cacau show.png" alt="">
+
+                    </div>
+                </section>
+
+                <section id="duvidas" class="duvidas">
+                    <h1>DÚVIDAS</h1>
+
+                    <div class="duvida" onmousedown="toggleDiv('duvida1', 'seta1');">
+                        <div class="duvida-pergunta">
+                            <h2>Como faço para me inscrever no evento?</h2>
+                            <img id="seta1" src="IMAGENS/arrow_forward_ios.svg" alt="">
+                        </div>
+                        <div id="duvida1" class="duvida-resposta">
+                            <h3>Para se inscrever no evento, basta acessar o site oficial e clicar no botão
+                                "Inscreva-se". Você será direcionado a um formulário de inscrição onde poderá
+                                colocar suas informações e escolher suas atividades.</h3>
+                        </div>
+                    </div>
+
+                    <div class="duvida" onmousedown="toggleDiv('duvida2', 'seta2');">
+                        <div class="duvida-pergunta">
+                            <h2>Como faço para me inscrever só nos minicursos?</h2>
+                            <img id="seta2" src="IMAGENS/arrow_forward_ios.svg" alt="">
+                        </div>
+                        <div id="duvida2" class="duvida-resposta">
+                            <h3>Ao entrar no link do formulário de inscrição, após preencher seu dados deve-se
+                                desconsiderar as opções de paletras e escolher apenas os minicursos que desejar,
+                                vale ainda ressaltar que não se deve realizar a inscrição em minicursos que
+                                ocorrerão em um mesmo horário.</h3>
+                        </div>
+                    </div>
+
+                    <div class="duvida" onmousedown="toggleDiv('duvida3', 'seta3');">
+                        <div class="duvida-pergunta">
+                            <h2>Como faço para me inscrever só nas palestras?</h2>
+                            <img id="seta3" src="IMAGENS/arrow_forward_ios.svg" alt="">
+                        </div>
+                        <div id="duvida3" class="duvida-resposta">
+                            <h3>Para se inscrever apenas nas palestras, acesse o site oficial do evento e no
+                                formulário de inscrição preencha seus dados e selecione apenas a opção "Palestras".
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="duvida" onmousedown="toggleDiv('duvida4', 'seta4');">
+                        <div class="duvida-pergunta">
+                            <h2>O evento terá certificado?</h2>
+                            <img id="seta4" src="IMAGENS/arrow_forward_ios.svg" alt="">
+                        </div>
+                        <div id="duvida4" class="duvida-resposta">
+                            <h3>Sim, todos os participantes receberão certificados de participação.</h3>
+                        </div>
+                    </div>
+
+                    
+                </section>
+            </div>-->
+                
+                <section class="redes-sociais">
+                    <img src="IMAGENS/Logos CAIS TECH/LOGO CAIS TECH.svg" alt="">
+                    <div>
+                        <p>Entre em contato</p>
+                        <div class="icones-redes">
+                            <span>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </span>
+                            <span>
+                                <a href=""><i class="bi bi-tiktok"></i></a>
+                            </span>
+                            <span>
+                                <a href=""><i class="bi bi-youtube"></i></a>
+                            </span>
+                        </div>
+                        <p>caistech.flo@gmail.com</p>
+                    </div>
+                </section>
+                <a href="#navbar" class="botao-topo">
+                    <i class="bi bi-arrow-up"></i>
+                </a>
+                <footer>
+                    <span>© 2025 Cais Tech | Alguns direitos reservados</span>
+                </footer>
+        </div>
+
+
+</body>
+
+</html>
