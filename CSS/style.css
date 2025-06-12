@@ -524,7 +524,7 @@ html {
 }
 
 .img-card-palestrante-left img{
-  height: auto;
+  height: 100%;
   width: 100%;
   max-width: 250px;
   border-top-right-radius: 10px;
@@ -538,7 +538,7 @@ html {
 }
 
 .img-card-palestrante-right img{
-  height: auto;
+  height: 100%;
   width: auto;
   max-width: 250px;
   border-top-left-radius: 10px;
@@ -724,11 +724,15 @@ html {
   padding-inline: 8px;
 
   .text-card-l-competicao{
+    flex: 2;
     padding-top: 10px;
     h2{
+      margin: 20px 0px 0px 0px;
       color: #F21D3C;
     }
     h1{
+      margin-top: 5px;
+      margin-bottom: 5px;
       color: #002657;
     }
 
@@ -738,7 +742,6 @@ html {
   }
 
   .image-card-l-competicao{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -766,9 +769,12 @@ html {
   .text-card-r-competicao{
     padding-top: 10px;
     h2{
+      margin: 20px 0px 0px 0px;
       color: #F21D3C;
     }
     h1{
+      margin-top: 5px;
+      margin-bottom: 5px;
       color: #002657;
     }
 
@@ -1802,8 +1808,17 @@ section.carrosel {
     margin-right: 0px;
   }
 
-  .image-card-l-competicao,.image-card-r-competicao{
+  
+    .text-card-l-competicao, .text-card-r-competicao{
+      flex: 1;
+    }
+
+  .image-card-l-competicao{
+    flex: none;}
+
+  .image-card-l-competicao, .image-card-r-competicao{
     margin: 0 auto;
+    flex: none;
   }
 }
 
@@ -1994,12 +2009,12 @@ footer{
   }
 
   .img-card-palestrante-right img{
-    height: auto;
+    height: 100%;
     width: 100%;
 
   }
   .img-card-palestrante-left img{
-    height: auto;
+    height: 100%;
     width: 100%;
 
   }
