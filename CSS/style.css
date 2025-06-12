@@ -768,6 +768,7 @@ html {
   padding-inline: 8px;
 
   .text-card-r-competicao{
+    flex: 2;
     padding-top: 10px;
     padding-left: 8px;
     h2{
@@ -996,6 +997,7 @@ html {
 }
 
 .cards-infos-artigos {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1818,9 +1820,11 @@ section.carrosel {
     }
 
   .image-card-l-competicao{
+    width: 90%;
     flex: none;}
 
   .image-card-l-competicao, .image-card-r-competicao{
+    width: 90%;
     margin: 0 auto;
     flex: none;
   }
