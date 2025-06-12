@@ -726,6 +726,7 @@ html {
   .text-card-l-competicao{
     flex: 2;
     padding-top: 10px;
+    padding-left: 8px;
     h2{
       margin: 20px 0px 0px 0px;
       color: #F21D3C;
@@ -768,6 +769,7 @@ html {
 
   .text-card-r-competicao{
     padding-top: 10px;
+    padding-left: 8px;
     h2{
       margin: 20px 0px 0px 0px;
       color: #F21D3C;
@@ -938,6 +940,7 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 8px;
 
     .dupla-infos-text-card-artigo{
       display: flex;
@@ -946,6 +949,7 @@ html {
       gap: 40px;
     }
     .infos-text-card-artigo{
+      padding: 8px;
       h4{
         margin: 0;
         color: #F21D3C;
